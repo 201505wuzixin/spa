@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>settime</title>
+  <style>
+  #btn{
+    width:100px;
+    height:50px;
+  }
+  </style>
+</head>
+<body>
+  <input type="button" id="btn">
+  
+  <script>
+    var btn=document.getElementById("btn");
+    window.onload=function(){
+      var num=9;
+      btn.disabled=true;
+      var timer=setInterval(function(){
+          if(num==0){
+          clearInterval(timer);
+          btn.value="同意";
+          btn.disabled=false;
+          btn.onclick=function(){
+          alert('就知道你会同意！')
+          }
+          }else{
+          btn.value='同意'+num+'s';
+          --num;
+          }
+          },1000);
+    }
+  </script>
+</body>
+</html>
