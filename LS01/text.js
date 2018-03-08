@@ -4,8 +4,8 @@ var height=document.getElementById('rectangle__height');
 var perimeter=document.getElementById('rectangle__perimeter');
 var area=document.getElementById('rectangle__area');
 calc.onclick=function(){
-  var wv=parseInt(width.value);
-  var hv=parseInt(height.value);
+  var wv=parseFloat(width.value);
+  var hv=parseFloat(height.value);
   perimeter.value=(wv+hv)*2;
   area.value=wv*hv;
 }
