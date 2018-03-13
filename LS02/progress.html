@@ -16,7 +16,9 @@ window.onload=function(){
   var stop=document.getElementById('stop');
   var news=document.getElementById('news');
   var timer=0;
+  var i=0;
   start.onclick=function(){
+    if(timer!==0)return;
     timer=setInterval(function(e){
       if(pg.value!=100){
       pg.value++;
@@ -31,6 +33,7 @@ window.onload=function(){
   }
   news.onclick=function(){
     pg.value=0;
+    i=0;
   }
 }
 </script>
