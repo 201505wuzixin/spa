@@ -2,23 +2,21 @@ $(function(){
   
     $("#width").blur(function(){
        if($("#width").val()===""){
-         $("#one").html("<br/>ÊäÈë²»ÄÜÎª¿Õ£¡");
+         $("#one").html("<br/>è¾“å…¥ä¸èƒ½ä¸ºç©ºï¼");
          $("#one").css("color","red");
          $("#one").css("font-size","12px");
-         $("#calc").attr("disabled",true);//²»ÄÜµã»÷¼ÆËã°´Å¥
+         $("#calc").attr("disabled",true);
          
-       }//else{
-         // $("#one").html("");
-       //}
+       }
      else if ($("#width").val()< 0) {
-         $("#one").html("<br/>¿í¶È±ØĞë´óÓÚÁã");
+         $("#one").html("<br/>å®½åº¦å¿…é¡»å¤§äºé›¶");
          $("#one").css("color","red");
          $("#one").css("font-size","12px");
          $("#calc").attr("disabled",true); 
       }
       else if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-?\d+])?$/.test($("#width").val())){
        // console.log("111");
-       $("#one").html("<br/>¿í¶È±ØĞëÊÇÊıÖµ");
+       $("#one").html("<br/>å®½åº¦å¿…é¡»æ˜¯æ•°å€¼");
        $("#one").css("color","red");
        $("#one").css("font-size","12px");
        $("#calc").attr("disabled",true);
@@ -32,20 +30,18 @@ $(function(){
 $("#height").blur(function(){
        if($("#height").val()==""){
 
-         $("#two").html("<br/>ÊäÈë²»ÄÜÎª¿Õ£¡");
+         $("#two").html("<br/>è¾“å…¥ä¸èƒ½ä¸ºç©ºï¼");
          $("#two").css("color","red");  
           $("#two").css("font-size","12px");
-
        }
         else if ($("#height").val()< 0) {
-         $("#two").html("<br/>³¤¶È±ØĞë´óÓÚÁã");
+         $("#two").html("<br/>é•¿åº¦å¿…é¡»å¤§äºé›¶");
          $("#two").css("color","red");
          $("#two").css("font-size","12px");
          $("#calc").attr("disabled",true); 
       }
       else if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-?\d+])?$/.test($("#height").val())){
-       // console.log("111");
-       $("#two").html("<br/>³¤¶È±ØĞëÊÇÊıÖµ");
+       $("#two").html("<br/>é•¿åº¦å¿…é¡»æ˜¯æ•°å€¼");
        $("#two").css("color","red");
        $("#two").css("font-size","12px");
        $("#calc").attr("disabled",true);
@@ -55,10 +51,6 @@ $("#height").blur(function(){
         $("#calc").attr("disabled",false);
       }
     });
-
-
-
-
 
   $("#perimeter").attr("disabled","false").css("background","#E0E0E0");
   $("#area").attr("disabled","false").css("background","#E0E0E0")

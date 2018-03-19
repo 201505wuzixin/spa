@@ -5,21 +5,20 @@ $(function(){
   $("#calc").click(function(){
       
          if($("#width").val()===""){
-           $("#one").html("<br/>ÊäÈë²»ÄÜÎª¿Õ£¡");
+           $("#one").html("<br/>è¾“å…¥ä¸èƒ½ä¸ºç©ºï¼");
            $("#one").css("color","red");
            $("#one").css("font-size","12px");
-          
-           
+
           }
           else if ($("#width").val()< 0) {
-           $("#one").html("<br/>¿í¶È±ØĞë´óÓÚÁã");
+           $("#one").html("<br/>å®½åº¦å¿…é¡»å¤§äºé›¶");
            $("#one").css("color","red");
            $("#one").css("font-size","12px");
            
            }
           else if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-?\d+])?$/.test($("#width").val())){
            // console.log("111");
-           $("#one").html("<br/>¿í¶È±ØĞëÊÇÊıÖµ");
+           $("#one").html("<br/>å®½åº¦å¿…é¡»æ˜¯æ•°å€¼");
            $("#one").css("color","red");
            $("#one").css("font-size","12px");
            
@@ -27,20 +26,20 @@ $(function(){
       
           else if($("#height").val()==""){
 
-             $("#two").html("<br/>ÊäÈë²»ÄÜÎª¿Õ£¡");
+             $("#two").html("<br/>è¾“å…¥ä¸èƒ½ä¸ºç©ºï¼");
              $("#two").css("color","red");  
               $("#two").css("font-size","12px");
               $("#calc").attr("disabled",true); 
            }
             else if ($("#height").val()< 0) {
-             $("#two").html("<br/>³¤¶È±ØĞë´óÓÚÁã");
+             $("#two").html("<br/>é•¿åº¦å¿…é¡»å¤§äºé›¶");
              $("#two").css("color","red");
              $("#two").css("font-size","12px");
             
           }
           else if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-?\d+])?$/.test($("#height").val())){
            
-           $("#two").html("<br/>³¤¶È±ØĞëÊÇÊıÖµ");
+           $("#two").html("<br/>é•¿åº¦å¿…é¡»æ˜¯æ•°å€¼");
            $("#two").css("color","red");
            $("#two").css("font-size","12px");
            
@@ -53,10 +52,5 @@ $(function(){
              $("#perimeter").val(w*2+h*2);
              $("#area").val(w*h);
           }
-      
-
-
-
-
   });
 })
