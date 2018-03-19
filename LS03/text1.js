@@ -6,7 +6,6 @@ $(function(){
          $("#one").css("color","red");
          $("#one").css("font-size","12px");
          $("#calc").attr("disabled",true);
-         
        }
      else if ($("#width").val()< 0) {
          $("#one").html("<br/>宽度必须大于零");
@@ -15,7 +14,6 @@ $(function(){
          $("#calc").attr("disabled",true); 
       }
       else if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-?\d+])?$/.test($("#width").val())){
-       // console.log("111");
        $("#one").html("<br/>宽度必须是数值");
        $("#one").css("color","red");
        $("#one").css("font-size","12px");
